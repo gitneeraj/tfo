@@ -1,0 +1,62 @@
+$colors-primary-50: #dcccaa;
+$colors-primary-100: #d5c199;
+$colors-primary-200: #ceb788;
+$colors-primary-300: #c7ad77;
+$colors-primary-400: #c0a266;
+$colors-primary-500: #b99855;
+$colors-primary-550: #b99855;
+$colors-primary-600: #947a44;
+$colors-primary-700: #6f5b33;
+$colors-primary-800: #4a3d22;
+$colors-primary-900: #251e11;
+$colors-gray-800: #222222;
+$radii-sm: 0.125rem;
+
+body {
+  font-family: sans-serif;
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s ease;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    input {
+      width: 100%;
+      margin: 4px 0 0 0;
+      padding: 8px 8px;
+      background-color: $colors-gray-800;
+      border: 1px solid;
+      border-color: rgba(255, 255, 255, 0.16);
+      border-radius: $radii-sm;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      color: #fff;
+
+      &:focus {
+        outline: none;
+        border-color: $colors-primary-500;
+      }
+    }
+
+    button {
+      width: 50%;
+      padding: 8px 0;
+      background-color: $colors-primary-500;
+      color: $colors-gray-800;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $colors-primary-600;
+      }
+    }
+  }
+}
